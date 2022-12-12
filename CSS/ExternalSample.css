@@ -1,0 +1,21 @@
+h1{
+    color: darkgreen;
+    text-align: center;
+}
+p{
+    color: darkslategray;
+    text-align: justify;
+}
+img{
+    height: 60%;
+    width: 100%;
+    
+}
+label{
+    color: darkred;
+    text-align: center;
+}
+button{
+    color:#fff ;
+    background-color:seagreen ;
+}
