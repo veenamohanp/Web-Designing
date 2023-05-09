@@ -1,0 +1,38 @@
+.header{
+    width: 100%;
+    height: 100px;
+    background-color: slategrey;
+    }
+    
+    .main-body{
+    background-color: bisque;
+    width: 100%;
+    height: 100%
+    }
+    .footer{
+        width: 100%;
+        height: 100px;
+        background-color: gold;
+    }
+    .left-section{
+        width: 200px;
+        float: left;
+        height: 500px;
+        background-color: chocolate;
+        
+        }
+    .right-section{
+        width: 200px;
+        height: 500px;
+        background-color:hotpink;
+        float: right;
+    }
+    .content{
+        width: 100%;
+        height: 500px;
+        background-color: turquoise;
+
+    }
+    body{
+        margin: 0px;
+    }
