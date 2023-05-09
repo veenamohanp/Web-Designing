@@ -1,0 +1,17 @@
+
+.header{
+width: 100%;
+height: 15%;
+background-color: slategrey;
+}
+
+.left-section{
+width: 10%;
+height: 70%;
+background-color: crimson;
+}
+.main-body{
+background-color: bisque;
+width: 100%;
+height: 100%;
+}

@@ -1,0 +1,37 @@
+#button{
+    background-color: green;
+}
+h2{
+    background-color: darkgrey;
+}
+.para{
+    color: blue;
+    font-size: medium;
+    font-style: italic;
+}
+.outer-div{
+    width: 500px;
+    height: 200px;
+    background-color: darkolivegreen;
+    margin-left: 30px;
+    margin-top: 25px;
+    padding-left: 40px;
+    padding-top: 40px;
+    border: 5px solid;
+    border-color: brown;
+}
+.inner-div{
+    width: 200px;
+    height: 100px;
+    background-color: rgb(60, 33, 214);
+    margin-left: 30px;
+    margin-top: 25px;
+    padding-left: 40px;
+    padding-top: 40px;
+    border: 5px solid;
+    border-color: rgb(54, 51, 51);
+}
+.color{
+    color: white;
+   
+}
