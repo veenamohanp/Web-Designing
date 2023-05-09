@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="show()" > Click me</button>
+    <script>
+        function show(){
+
+            display()
+
+            console.log("Button Clicked...!")
+            var a= 2;
+            var b= 3;
+            var sum = a+b;
+            console.log("Sum =",sum)
+
+            let d=5;
+            // let d=6; giving error -----> d has been already declared
+            d=7
+            console.log("d = ", d)
+            const k=11;
+            // k=12 error ---> asignment to a const variable
+            // const k = error --->  12;declared 
+            console.log("k = ",k)
+
+
+            // If--Else
+
+            if(k%2==0){
+                console.log("Number is Even");
+            }else{
+                console.log("Number is odd");
+            }
+
+            // For Loop
+
+            for( var i=0; i<=10; i++){
+                console.log(i)
+            }
+
+            // Array
+             
+            var arr=["apple","orange",12,"kite",25]
+            console.log(arr)
+            console.log(arr[1])
+
+            // Object
+
+            var person={
+                Name: "Veena",
+                Age:19,
+                Place:"Kollam"
+
+            }
+            console.log(person)
+            console.log(person.Name)
+            console.log(person.Place);
+
+
+
+            // Array of object
+            var details = [
+                {Name: "Veena",
+                Age:19,
+                Place:"Kollam"},
+
+                {
+                    Name:"Ash",
+                    Age:20,
+                    Place:"Malappuram"
+                },
+                {
+                    Name:"Anju",
+                    Age:23,
+                    Place:"Kozhikode"
+                },
+                {
+                    Name:"Vish",
+                    Age:25,
+                    Place:"Kollam"
+                },
+                {
+                    Name:"Resh",
+                    Age:19,
+                    Place:"Kollam"
+                }
+                
+            ]
+            console.log("ARRAY OF OBJECTS")
+            console.log(details)
+            console.log(details[3])
+            console.log(details[2].Name)
+            console.log(details[1].Age)
+
+        }
+
+        function display(){
+            console.log("Heyyy")
+        }
+        
+    </script>
+</body>
+</html>
