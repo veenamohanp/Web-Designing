@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <style>
+            #screen{
+                margin-left: 10px;
+                width: 300px;
+                height: 300px;
+                border:solid 1px ;
+               
+            }
+        </style>
+        <div id="screen"></div>
+        <div style="margin-left: 45px; margin-top: 10px;">
+            <button onclick="color('red')">Red</button>
+            <button onclick="color('green')">Green</button>
+            <button onclick="color('yellow')">Yellow</button>
+            <Button onclick="color('blue')">Blue</Button>
+        </div>
+        <script>
+            function color(col){
+                document.getElementById("screen").style.background=col
+            }
+        </script>
+    </div>
+</body>
+</html>

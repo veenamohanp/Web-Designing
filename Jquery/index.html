@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>                             <!-- adding jquery to the html file -->
+
+    <div style="height: 100px; width: 100px; background: olive;" id="box">
+        
+
+    </div>
+    <br>
+    <br>
+    <button id="btn">Click Me</button>
+    <br>
+    <br>
+    <div>
+        <label for="">Enter Name</label><br>
+        <input type="text" name="" id="inp"><br>
+        <label style="display: none; color: red;" id="err">Enter Name minimum of 4 characters</label> <br><br><!--If not showing in alert box but showing in page itself -->
+        <label for="">Enter Phone Number</label><br>
+        <input type="text" name="" id=""><br>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                // alert("Button Clicked")
+               // $("#box").toggle() //will hide and display the box in the screen alternatively
+               // $("#box").toggle(3000) //toggles in 3s
+               $("#box").fadeToggle(3000) //fadeout and fade in in 3s
+            })
+            
+            $("#btn").mouseenter(function(){
+                $(this).css({"background":"green","color":"#fff"})
+            })
+            $("#btn").mouseleave(function(){
+                $(this).css({"background":"white", "color":"blue"})
+            })
+            $("#inp").blur(function(){
+                var text= $(this).val()
+                if(text.length<4){
+                    //alert("Enter Name minimum of 4 characters")
+                    $("#err").show()
+                }else{
+                    $("#err").hide()
+                }
+            })
+        })
+    </script>
+</body>
+</html>
